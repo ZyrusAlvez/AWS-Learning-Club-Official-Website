@@ -41,17 +41,17 @@ export default function Particle() {
               },
               modes: {
                 push: {
-                  quantity: 4,
+                  quantity: 1,
                 },
                 repulse: {
-                  distance: 200,
+                  distance: 100,
                   duration: 0.4,
                 },
               },
             },
             particles: {
               color: {
-                value: "#bae6fd",
+                value: "#FFA23F",
               },
               links: {
                 color: "#e0f2fe",

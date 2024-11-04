@@ -1,15 +1,19 @@
-import Header from "./components/Header.jsx"
-import Title from "./components/Title.jsx"
-import Particle from "./components/Particle.jsx"
-import Officers from "./components/Officers.jsx"
+import Header from "./components/Home/Header.jsx"
+import Title from "./components/Home/Title.jsx"
+import Particle from "./components/Home/Particle.jsx"
+import Officers from "./components/About Us/Officers.jsx"
 
 export default function App() {
   return (
-    <div className="bg-black h-screen w-full">
-      <Particle />
-      <Header />
-      <Title />
-      <Officers />
+    <div>
+      <div className="bg-black h-screen w-full">
+        <Particle />
+        <Header />
+        <Title />
+      </div>
+      <div className="bg-black h-screen w-full">
+        <Officers />
+      </div>
     </div>
   )
 }

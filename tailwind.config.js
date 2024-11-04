@@ -10,8 +10,8 @@ export default {
         pink: '#ED0968',
         purple: '#7E117A',
         black: "#111111",
-        yellow: "#FFA23F"
-
+        yellow: "#FFA23F",
+        slate: "#18181b"
       }
     },
   },
