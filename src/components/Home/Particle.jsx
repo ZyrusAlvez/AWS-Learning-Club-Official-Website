@@ -44,20 +44,20 @@ export default function Particle() {
                   quantity: 1,
                 },
                 repulse: {
-                  distance: 100,
-                  duration: 0.4,
+                  distance: 150,
+                  duration: 0.5,
                 },
               },
             },
             particles: {
               color: {
-                value: "#FFA23F",
+                value: "#ED0968",
               },
               links: {
-                color: "#e0f2fe",
+                color: "#ED0968",
                 distance: 150,
                 enable: true,
-                opacity: 0.5,
+                opacity: 1.5,
                 width: 1,
               },
               move: {
@@ -75,13 +75,13 @@ export default function Particle() {
                   enable: true,
                   area: 800,
                 },
-                value: 80, // Reduced for better performance
+                value: 120, // Reduced for better performance
               },
               opacity: {
-                value: 0.5,
+                value: 1.5,
               },
               shape: {
-                type: "circle",
+                type: "square",
               },
               size: {
                 value: { min: 1, max: 5 },

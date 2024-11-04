@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        pink: '#ED0968',
+        pink: '#D77493',
         purple: '#7E117A',
         black: "#111111",
         yellow: "#FFA23F",
