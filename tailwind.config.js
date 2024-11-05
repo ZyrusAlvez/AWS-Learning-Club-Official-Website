@@ -12,6 +12,9 @@ export default {
         black: "#111111",
         yellow: "#FFA23F",
         slate: "#18181b"
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif']
       }
     },
   },
