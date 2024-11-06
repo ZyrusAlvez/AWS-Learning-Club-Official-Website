@@ -16,7 +16,7 @@ const Title = () => {
   });
 
   return (
-    <div className="h-full w-full absolute flex flex-col text-white justify-center items-start pl-4 sm:px-8">
+    <div className="h-full w-full absolute flex flex-col text-white justify-center items-start pl-4 sm:pl-8">
       <h6 className="text-sm font-bold sm:text-base mt-16">
         University of Perpetual Help System Laguna - Biñan
       </h6>
