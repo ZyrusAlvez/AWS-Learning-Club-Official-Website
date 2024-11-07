@@ -9,149 +9,60 @@ const Team = () => {
   const teamMembers = [
     {
       img: person1,
-      name: "dawdawdaw dawdawdMark Anthony Hernandez",
+      name: "1dawdawdaw dawdawdMark Anthony Hernandez",
       title: "Lead",
       subtitle: "Expert in cloud solutions with over 5 years of experience.",
     },
     {
       img: person1,
-      name: "Mark Anthony Hernandez",
+      name: "2Mark Anthony Hernandez",
       title: "Lead",
       subtitle: "Expert in cloud solutions with over 5 years of experience.",
     },
     {
       img: person1,
-      name: "Mark Antho3ny Hernandez",
+      name: "3Mark Antho3ny Hernandez",
       title: "Lead",
       subtitle: "Expert in cloud solutions with over 5 years of experience.",
     },
     {
       img: person1,
-      name: "Mark Anthony Hernandez",
+      name: "4Mark Anthony Hernandez",
       title: "Lead",
       subtitle: "Expert in cloud solutions with over 5 years of experience.",
     },
     {
       img: person1,
-      name: "Mark Anthony Hernandez",
+      name: "5Mark Anthony Hernandez",
       title: "Lead",
       subtitle: "Expert in cloud solutions with over 5 years of experience.",
     },
     {
       img: person1,
-      name: "Mark Anthony Hernandez",
+      name: "6Mark Anthony Hernandez",
       title: "Lead",
       subtitle: "Expert in cloud solutions with over 5 years of experience.",
     },
     {
       img: person1,
-      name: "Mark Anthony Hernandez",
+      name: "7Mark Anthony Hernandez",
       title: "Lead",
       subtitle: "Expert in cloud solutions with over 5 years of experience.",
     },
     {
       img: person1,
-      name: "Madawdawdz",
+      name: "8Madawdawdz",
       title: "Lead",
       subtitle: "Expert in cloud solutions with over 5 years of experience.",
     },
     {
       img: person1,
-      name: "Mark Anthony Hernandez",
+      name: "9Mark Anthony Hernandez",
       title: "Lead",
       subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "Mark Antho3ny Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "Madawdawdz",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "Mark Antho3ny Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
-    {
-      img: person1,
-      name: "lastMadawdawdz",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    },
+    }
   ];
+  
 
   const [startIndex, setStartIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -233,7 +144,6 @@ const Team = () => {
     const baseTranslate = (startIndex + cardsToShow) * (100 / cardsToShow);
     return baseTranslate;
   };
-
   return (
     <div className="w-full min-h-screen bg-black px-4 flex flex-col justify-center">
       <div className="flex flex-col justify-center items-center gap-2 mb-8 sm:mb-12">

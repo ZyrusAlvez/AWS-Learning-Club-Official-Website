@@ -1,4 +1,4 @@
-import Header from "./Header";
+import Header from "../Header/Header";
 import Particle from "./Particle";
 import Title from "./Title";
 
