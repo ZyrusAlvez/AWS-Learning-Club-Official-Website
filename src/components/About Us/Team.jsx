@@ -1,36 +1,156 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from "react";
 import Team_Card from "./Team_Card";
 import Pagination from "../UI/Pagination";
 import Arrow_Left from "../UI/Arrow_Left";
 import Arrow_Right from "../UI/Arrow_Right";
-import person1 from "../../assets/Team/person1.jpg"
+import person1 from "../../assets/Team/person1.jpg";
 
 const Team = () => {
   const teamMembers = [
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Antho3ny Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Madawdawdz", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Antho3ny Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Madawdawdz", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Antho3ny Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "Mark Anthony Hernandez", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
-    { img: person1, name: "lastMadawdawdz", title: "Lead", subtitle: "Expert in cloud solutions with over 5 years of experience." },
+    {
+      img: person1,
+      name: "dawdawdaw dawdawdMark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Antho3ny Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Madawdawdz",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Antho3ny Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Madawdawdz",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Antho3ny Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "Mark Anthony Hernandez",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
+    {
+      img: person1,
+      name: "lastMadawdawdz",
+      title: "Lead",
+      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+    },
   ];
 
   const [startIndex, setStartIndex] = useState(0);
@@ -39,11 +159,14 @@ const Team = () => {
 
   // Function to update cards to show based on window width
   const updateCardsToShow = useCallback(() => {
-    if (window.innerWidth >= 1280) { // xl
+    if (window.innerWidth >= 1280) {
+      // xl
       setCardsToShow(4);
-    } else if (window.innerWidth >= 1024) { // lg
+    } else if (window.innerWidth >= 1024) {
+      // lg
       setCardsToShow(3);
-    } else if (window.innerWidth >= 640) { // sm
+    } else if (window.innerWidth >= 640) {
+      // sm
       setCardsToShow(2);
     } else {
       setCardsToShow(1);
@@ -51,15 +174,24 @@ const Team = () => {
   }, []);
 
   useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000);
+
+    // this will avoid the nextslide() to take effect 2x
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
     updateCardsToShow();
-    window.addEventListener('resize', updateCardsToShow);
-    return () => window.removeEventListener('resize', updateCardsToShow);
+    window.addEventListener("resize", updateCardsToShow);
+    return () => window.removeEventListener("resize", updateCardsToShow);
   }, [updateCardsToShow]);
 
   const extendedMembers = [
     ...teamMembers.slice(-cardsToShow),
     ...teamMembers,
-    ...teamMembers.slice(0, cardsToShow)
+    ...teamMembers.slice(0, cardsToShow),
   ];
 
   const handleTransitionEnd = () => {
@@ -73,33 +205,18 @@ const Team = () => {
 
   const nextSlide = () => {
     setIsTransitioning(true);
-    setStartIndex(prev => prev + 1);
+    setStartIndex((prev) => prev + 1);
   };
 
   const prevSlide = () => {
     setIsTransitioning(true);
-    setStartIndex(prev => prev - 1);
+    setStartIndex((prev) => prev - 1);
   };
 
   // Modified to handle pagination clicks
   const handlePaginationClick = (newIndex) => {
-    if (newIndex === startIndex) return;
-    
     setIsTransitioning(true);
-    // Calculate the shortest path to the new index
-    const currentIndex = startIndex >= teamMembers.length ? 0 : 
-                        startIndex < 0 ? teamMembers.length - 1 : startIndex;
-    
-    const diff = newIndex - currentIndex;
-    const length = teamMembers.length;
-    
-    // Calculate the shortest path considering wrap-around
-    let shortestPath = diff;
-    if (Math.abs(diff) > length / 2) {
-      shortestPath = diff > 0 ? diff - length : diff + length;
-    }
-    
-    setStartIndex(currentIndex + shortestPath);
+    setStartIndex(newIndex);
   };
 
   useEffect(() => {
@@ -120,7 +237,9 @@ const Team = () => {
   return (
     <div className="w-full min-h-screen bg-black p-4 sm:p-6 lg:p-8 flex flex-col justify-center">
       <div className="flex flex-col justify-center items-center gap-2 mb-8 sm:mb-12">
-        <h1 className="text-pink text-3xl sm:text-4xl xl:text-5xl font-bold text-center">Meet Our Team</h1>
+        <h1 className="text-pink text-3xl sm:text-4xl xl:text-5xl font-bold text-center">
+          Meet Our Team
+        </h1>
         <h2 className="text-white text-center text-sm sm:text-base xl:text-xl max-w-3xl">
           Our team is made up of cloud experts, experienced trainers, and
           passionate community builders who are dedicated to helping you succeed
@@ -130,21 +249,29 @@ const Team = () => {
 
       <div className="relative w-full">
         <div className="overflow-hidden">
-          <div 
+          <div
             className="flex"
             style={{
               transform: `translateX(-${getTranslateX()}%)`,
-              transition: isTransitioning ? 'transform 500ms cubic-bezier(0.4, 0, 0.2, 1)' : 'none',
+              transition: isTransitioning
+                ? "transform 500ms cubic-bezier(0.4, 0, 0.2, 1)"
+                : "none",
             }}
             onTransitionEnd={handleTransitionEnd}
           >
             {extendedMembers.map((member, index) => (
-              <div 
+              <div
                 key={index}
                 className={`flex-shrink-0 px-2 sm:px-4 lg:px-6 flex items-start justify-center
-                  ${cardsToShow === 1 ? 'w-full' : 
-                    cardsToShow === 2 ? 'w-1/2' :
-                    cardsToShow === 3 ? 'w-1/3' : 'w-1/4'}`}
+                  ${
+                    cardsToShow === 1
+                      ? "w-full"
+                      : cardsToShow === 2
+                      ? "w-1/2"
+                      : cardsToShow === 3
+                      ? "w-1/3"
+                      : "w-1/4"
+                  }`}
               >
                 <Team_Card
                   img={member.img}
@@ -159,10 +286,15 @@ const Team = () => {
       </div>
 
       <div className="flex justify-between items-center mt-8 px-4 sm:px-6 lg:px-9">
-        <Pagination 
-          count={teamMembers.length} 
-          currentPage={startIndex >= teamMembers.length ? 0 : 
-                      startIndex < 0 ? teamMembers.length - 1 : startIndex}
+        <Pagination
+          count={teamMembers.length}
+          currentPage={
+            startIndex >= teamMembers.length
+              ? 0
+              : startIndex < 0
+              ? teamMembers.length - 1
+              : startIndex
+          }
           onPageChange={handlePaginationClick}
         />
         <div className="flex gap-4">

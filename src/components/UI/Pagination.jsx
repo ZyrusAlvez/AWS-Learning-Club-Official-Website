@@ -8,10 +8,10 @@ const Pagination = ({ count, currentPage, onPageChange }) => {
           <button
             key={index}
             onClick={() => onPageChange(index)}
-            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transform transition-all duration-300 ease-in-out
+            className={`w-2 h-2 rounded-full transform transition-all duration-300 ease-in-out
               ${currentPage === index 
                 ? 'bg-pink' 
-                : 'bg-gray-400'
+                : 'bg-white'
               }
             `}
             aria-label={`Go to slide ${index + 1}`}
