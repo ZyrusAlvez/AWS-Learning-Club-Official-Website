@@ -29,10 +29,10 @@ const Title = () => {
         <Cursor />
       </h3>
       <div className="flex mt-6">
-        <button className="text-sm rounded-full border-2 py-1 px-4 text-pink border-pink mr-4 hover:text-white hover:bg-pink sm:text-base ">
+        <button className="text-sm rounded-full border-2 py-1 px-4 text-pink border-pink mr-4 hover:text-white hover:bg-pink active:bg-pink sm:text-base ">
           Join the Club
         </button>
-        <button className="text-sm rounded-full border-2 py-1 px-4 text-pink border-pink hover:text-white hover:bg-pink sm:text-base">
+        <button className="text-sm rounded-full border-2 py-1 px-4 text-pink border-pink hover:text-white hover:bg-pink active:bg-pink sm:text-base">
           Register for Events
         </button>
       </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import Team_Card from "./Team_Card";
 import Pagination from "../UI/Pagination";
 import Arrow_Left from "../UI/Arrow_Left";
@@ -67,6 +67,7 @@ const Team = () => {
   const [startIndex, setStartIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [cardsToShow, setCardsToShow] = useState(1);
+  const interval = useRef(null)
 
   // Function to update cards to show based on window width
   const updateCardsToShow = useCallback(() => {
@@ -85,20 +86,26 @@ const Team = () => {
   }, []);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 3000);
-
-    // this will avoid the nextslide() to take effect 2x
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
     updateCardsToShow();
     window.addEventListener("resize", updateCardsToShow);
     return () => window.removeEventListener("resize", updateCardsToShow);
   }, [updateCardsToShow]);
 
+  // to reset the interval of autoSlide
+  function autoSlide(){
+    clearInterval(interval.current)
+    interval.current = setInterval(() => {
+      nextSlide();
+    }, 3000);
+
+  }
+
+  useEffect(() => {
+    autoSlide()
+    return () => clearInterval(interval.current);
+  }, []);
+
+  // to imitate a infinite loop of array
   const extendedMembers = [
     ...teamMembers.slice(-cardsToShow),
     ...teamMembers,
@@ -115,11 +122,13 @@ const Team = () => {
   };
 
   const nextSlide = () => {
+    autoSlide()
     setIsTransitioning(true);
     setStartIndex((prev) => prev + 1);
   };
 
   const prevSlide = () => {
+    autoSlide()
     setIsTransitioning(true);
     setStartIndex((prev) => prev - 1);
   };
