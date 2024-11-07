@@ -235,12 +235,12 @@ const Team = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-black p-4 sm:p-6 lg:p-8 flex flex-col justify-center">
+    <div className="w-full min-h-screen bg-black px-4 flex flex-col justify-center">
       <div className="flex flex-col justify-center items-center gap-2 mb-8 sm:mb-12">
         <h1 className="text-pink text-3xl sm:text-4xl xl:text-5xl font-bold text-center">
           Meet Our Team
         </h1>
-        <h2 className="text-white text-center text-sm sm:text-base xl:text-xl max-w-3xl">
+        <h2 className="text-white text-center sm:text-lg">
           Our team is made up of cloud experts, experienced trainers, and
           passionate community builders who are dedicated to helping you succeed
           in your AWS journey
