@@ -27,9 +27,10 @@ const Mission = () => {
               transition: "transform 500ms cubic-bezier(0.4, 0, 0.2, 1)",
             }}
           >
-            <div className="flex flex-col items-center justify-center gap-8 w-full flex-shrink-0">
-              <IoEyeSharp size={22} />
-              <h1 className="text-lg font-semibold">MISSION</h1>
+            <div className="flex flex-col items-center justify-center gap-8 w-full flex-shrink-0 pt-8">
+              <IoEyeSharp size={22} className="absolute top-8"/>
+              <div className="w-[22px] h-[22px] rounded-full absolute top-8" style={{ boxShadow: "0 0 30px 20px rgba(255, 20, 147, 0.1)" }}></div>
+              <h1 className="text-lg font-semibold mt-8">MISSION</h1>
               <h2 className="font-bold text-center max-w-[50rem] sm:text-2xl mx-4">
                 "The team at AWS transformed our cloud strategy, making it seamless
                 and efficient. Their expertise and support have been invaluable to our
@@ -37,9 +38,10 @@ const Mission = () => {
               </h2>
             </div>
 
-            <div className="flex flex-col items-center justify-center gap-8 w-full flex-shrink-0">
-            <IoEyeSharp size={22} />
-              <h1 className="text-lg font-semibold">VISION</h1>
+            <div className="flex flex-col items-center justify-center gap-8 w-full flex-shrink-0 pt-8">
+              <IoEyeSharp size={22} className="absolute top-8"/>
+              <div className="w-[22px] h-[22px] rounded-full absolute top-8" style={{ boxShadow: "0 0 30px 20px rgba(255, 20, 147, 0.1)" }}></div>
+              <h1 className="text-lg font-semibold mt-8">VISION</h1>
               <h2 className="font-bold text-center max-w-[50rem] sm:text-2xl mx-4">
                 "Our vision is to continue pioneering innovative solutions, driving
                 growth and making a positive impact through technology."

@@ -4,7 +4,7 @@ import Mission from "./Mission.jsx";
 
 const About_Us = () => {
   return (
-    <div className="w-fill bg-black pt-4 scroll-mt-16 mx-4" id="about_us">
+    <div className="w-fill bg-black scroll-mt-16 mx-4" id="about_us">
       <Top />
       <Team />
       <Mission />
