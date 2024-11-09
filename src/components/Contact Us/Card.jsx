@@ -4,7 +4,7 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const Card = ({ title, subtitle, info }) => {
   return (
-    <div className="text-white flex flex-col items-center gap-6">
+    <div className="text-white flex flex-col items-center space-y-6 w-[350px]">
       <div className="text-pink text-[48px]"> 
         {title === "Email" ? (
           <MdOutlineEmail />

@@ -11,7 +11,8 @@ export default {
         purple: '#7E117A',
         black: "#111111",
         yellow: "#FFA23F",
-        slate: "#18181b"
+        slate: "#18181b",
+        brand: "#313148"
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif']
