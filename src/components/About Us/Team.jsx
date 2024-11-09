@@ -159,7 +159,7 @@ const Team = () => {
         <h1 className="text-pink text-3xl sm:text-4xl xl:text-5xl font-bold text-center">
           Meet Our Team
         </h1>
-        <h2 className="text-white text-center sm:text-lg">
+        <h2 className="text-white text-center max-w-[800px] sm:text-lg">
           Our team is made up of cloud experts, experienced trainers, and
           passionate community builders who are dedicated to helping you succeed
           in your AWS journey
@@ -204,7 +204,7 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="flex justify-between items-center mt-8 px-4 sm:px-6 lg:px-9">
+      <div className="flex justify-between items-center mt-4 px-4 sm:px-8">
         <Pagination
           count={teamMembers.length}
           currentPage={

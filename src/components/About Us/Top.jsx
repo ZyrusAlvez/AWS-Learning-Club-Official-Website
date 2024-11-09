@@ -2,7 +2,7 @@ import Top_Card from "./Top_Card.jsx";
 
 const Top = () => {
   return (
-    <div className="w-full bg-black flex flex-col justify-center items-center px-4 mb-20">
+    <div className="w-full bg-black flex flex-col justify-center items-center mb-20">
       <h1 className="text-white text-center sm:text-lg">
         We offer a mix of educational programs and community-driven activities
         designed to help you excel in AWS.

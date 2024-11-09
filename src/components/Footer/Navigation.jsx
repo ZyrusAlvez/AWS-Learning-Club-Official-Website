@@ -16,7 +16,7 @@ const Navigation = () => {
       <div className="flex justify-between items-center mt-1 lg:justify-end lg:mt-4">
         <h1 className='lg:hidden'>Support</h1>
 
-        <div className='text-[#CCC] flex gap-3 justify-end text-[24px]'>
+        <div className='text-[#CCC] flex gap-3 justify-end text-xl lg:text-2xl'>
           <FaFacebook />
           <FaInstagram />
           <FaLinkedin />
