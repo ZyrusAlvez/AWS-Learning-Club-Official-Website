@@ -39,11 +39,11 @@ const Header = () => {
   }
 
   return (
-    <div className="flex justify-between items-center w-full px-4 fixed pt-2 bg-black z-50 sm:px-8">
-      <img src={aws_logo} alt="AWS learning club Logo" className="w-14 h-14" />
+    <div className="flex justify-between items-center w-full px-4 fixed pt-2 bg-black z-50 sm:px-8 tablet:h-[5rem]">
+      <img src={aws_logo} alt="AWS learning club Logo" className="w-14 h-14 tablet:w-24 tablet:h-24" />
       
       {/* Desktop Navigation */}
-      <ul className="hidden space-x-4 text-white sm:flex">
+      <ul className="hidden space-x-4 text-white sm:flex tablet:text-3xl tablet:gap-5">
         <li><a href="#home" className={activeHome ? "text-yellow" : "text-white"} onClick={() => navButtonClicked(1)}>Home</a></li>
         <li><a href="#about_us" className={activeAbout ? "text-yellow" : "text-white"} onClick={() => navButtonClicked(2)}>About Us</a></li>
         <li><a href="#events" className={activeEvents ? "text-yellow" : "text-white"} onClick={() => navButtonClicked(3)}>Events</a></li>

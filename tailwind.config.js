@@ -16,7 +16,10 @@ export default {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif']
-      }
+      },
+      screens: {
+        'tablet': { 'raw': '(min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 1368px)' }
+      },
     },
   },
   plugins: [],

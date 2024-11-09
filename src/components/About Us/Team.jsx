@@ -154,7 +154,7 @@ const Team = () => {
     return baseTranslate;
   };
   return (
-    <div className="w-full min-h-screen bg-black px-4 flex flex-col justify-center">
+    <div className="w-full bg-black px-4 flex flex-col justify-center">
       <div className="flex flex-col justify-center items-center gap-2 mb-8 sm:mb-12">
         <h1 className="text-pink text-3xl sm:text-4xl xl:text-5xl font-bold text-center">
           Meet Our Team
