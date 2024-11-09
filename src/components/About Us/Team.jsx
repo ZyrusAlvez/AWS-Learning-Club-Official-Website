@@ -9,7 +9,7 @@ const Team = () => {
   const teamMembers = [
     {
       img: person1,
-      name: "1dawdawdaw dawdawdMark Anthony Hernandez",
+      name: "1Mark Anthony Hernandez",
       title: "Lead",
       subtitle: "Expert in cloud solutions with over 5 years of experience.",
     },
