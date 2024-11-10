@@ -13,7 +13,7 @@ const Bottom = () => {
       </div>
 
       <div
-        className="w-[50%] h-0 absolute -bottom-20 left-[50%] translate-x-[-50%]"
+        className="w-[30%] h-0 absolute -bottom-20 left-[50%] translate-x-[-50%]"
         style={{
           boxShadow: "0 0 200px 150px rgba(255, 20, 147, 0.1)"
         }}
