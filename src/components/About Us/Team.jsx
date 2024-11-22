@@ -3,7 +3,10 @@ import Team_Card from "./Team_Card";
 import Pagination from "../UI/Pagination";
 import Arrow_Left from "../UI/Arrow_Left";
 import Arrow_Right from "../UI/Arrow_Right";
+
 import person1 from "../../assets/Team/person1.jpg";
+import person2 from "../../assets/Team/Sherwin P. Limosnero (Head of Graphic Design).jpg"
+import person3 from "../../assets/Team/Bermundo, Nicole B. - Associate Secretary.jpg"
 
 const Team = () => {
   const teamMembers = [
@@ -14,15 +17,15 @@ const Team = () => {
       subtitle: "Expert in cloud solutions with over 5 years of experience.",
     },
     {
-      img: person1,
-      name: "2Mark Anthony Hernandez",
-      title: "Lead",
+      img: person2,
+      name: "Sherwin P. Limosnero",
+      title: "Head of Graphic Design",
       subtitle: "Expert in cloud solutions with over 5 years of experience.",
     },
     {
-      img: person1,
-      name: "3Mark Antho3ny Hernandez",
-      title: "Lead",
+      img: person3,
+      name: "Nicole B. Bermundo",
+      title: "Associate Secretary",
       subtitle: "Expert in cloud solutions with over 5 years of experience.",
     },
     {

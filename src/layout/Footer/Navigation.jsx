@@ -17,9 +17,12 @@ const Navigation = () => {
         <h1 className='lg:hidden'>Support</h1>
 
         <div className='text-[#CCC] flex gap-3 justify-end text-xl lg:text-2xl'>
-          <FaFacebook />
-          <FaInstagram />
-          <FaLinkedin />
+          <a href="https://www.facebook.com/awslearningclub">
+            <FaFacebook />
+          </a>   
+          <a href="https://www.linkedin.com/company/awslcuphs/">
+            <FaLinkedin />
+          </a>
         </div>
       </div>
     </div>
