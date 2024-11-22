@@ -119,12 +119,6 @@ const Team = () => {
       subtitle: "Designs and delivers game development training programs.",
     },
     {
-      img: person16,
-      name: "Francis Concepcion",
-      title: "Training Coordinator (Game Dev)",
-      subtitle: "Designs and delivers game development training programs.",
-    },
-    {
       img: aws_logo,
       name: "John Carlo R. Lugatiman",
       title: "Treasurer",
