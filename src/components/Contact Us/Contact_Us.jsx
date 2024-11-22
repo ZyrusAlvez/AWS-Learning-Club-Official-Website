@@ -13,12 +13,12 @@ const Contact_Us = () => {
           <Card
             title="Phone"
             subtitle="Call us for inquiries or support; we’re here to help!"
-            info="+1 (555) 000-0000"
+            info="+639936628701"
           />
           <Card
             title="Place"
             subtitle="College of Computer Studies - UPHSL"
-            info="123 Sample St, Sydney NSW 2000 AU"
+            info="83JP+F52, National Hi-way, Sto. Niño, Biñan, Laguna"
           />
         </div>
       </div>

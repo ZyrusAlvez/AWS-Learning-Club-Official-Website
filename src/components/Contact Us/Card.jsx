@@ -16,7 +16,7 @@ const Card = ({ title, subtitle, info }) => {
       </div>
       <h1 className="font-bold text-[32px]">{title}</h1>
       <h2>{subtitle}</h2>
-      <h3 className="text-pink underline">{info}</h3>
+      <h3 className="text-pink underline text-center">{info}</h3>
     </div>
   );
 };

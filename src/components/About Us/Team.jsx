@@ -4,66 +4,138 @@ import Pagination from "../UI/Pagination";
 import Arrow_Left from "../UI/Arrow_Left";
 import Arrow_Right from "../UI/Arrow_Right";
 
-import person1 from "../../assets/Team/person1.jpg";
-import person2 from "../../assets/Team/Sherwin P. Limosnero (Head of Graphic Design).jpg"
+import aws_logo from "../../assets/aws_logo.png"
+import person1 from "../../assets/Team/lead.jpg";
+import person2 from "../../assets/Team/mica.jpg"
 import person3 from "../../assets/Team/Bermundo, Nicole B. - Associate Secretary.jpg"
+import person4 from "../../assets/Team/lance.jpg"
+import person5 from "../../assets/Team/larie.jpg"
+import person6 from "../../assets/Team/keihla.jpg"
+import person7 from "../../assets/Team/Andrew Velandrez - Head of Creatives.jpg"
+import person8 from "../../assets/Team/Sherwin P. Limosnero (Head of Graphic Design).jpg"
+import person10 from "../../assets/Team/christian.jpg"
+import person13 from "../../assets/Team/mickz.jpg"
+import person14 from "../../assets/Team/jerico.jpg"
+import person15 from "../../assets/Team/tomas.jpg"
+import person16 from "../../assets/Team/francis.jpg"
+
 
 const Team = () => {
   const teamMembers = [
     {
       img: person1,
-      name: "1Mark Anthony Hernandez",
+      name: "Mark Anthony Hernandez",
       title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+      subtitle: "Guides strategy and inspires team success.",
     },
     {
       img: person2,
-      name: "Sherwin P. Limosnero",
-      title: "Head of Graphic Design",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+      name: "Mica Erispe",
+      title: "Executive Secretary",
+      subtitle: "Handles schedules, communications, and records.",
     },
     {
       img: person3,
       name: "Nicole B. Bermundo",
       title: "Associate Secretary",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+      subtitle: "Supports admin tasks and meeting coordination.",
     },
     {
-      img: person1,
-      name: "4Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+      img: person4,
+      name: "Lance Barreno",
+      title: "Head of Innovation",
+      subtitle: "Drives creative projects and forward-thinking solutions.",
     },
     {
-      img: person1,
-      name: "5Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+      img: person5,
+      name: "Larie Amimirog",
+      title: "Head of Membership",
+      subtitle: "Strengthens member relationships and growth.",
     },
     {
-      img: person1,
-      name: "6Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+      img: person6,
+      name: "Keihla Ysabel Cardenas",
+      title: "Head of Communications",
+      subtitle: "Manages messaging and enhances organizational communication.",
     },
     {
-      img: person1,
-      name: "7Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+      img: person7,
+      name: "Andrew Velandrez",
+      title: "Head of Creatives",
+      subtitle: "Leads creative direction and brand visuals.",
     },
     {
-      img: person1,
-      name: "8Madawdawdz",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
+      img: person8,
+      name: "Sherwin Limosnero",
+      title: "Head of Graphic Design",
+      subtitle: "Leads visual design and branding efforts.",
     },
     {
-      img: person1,
-      name: "9Mark Anthony Hernandez",
-      title: "Lead",
-      subtitle: "Expert in cloud solutions with over 5 years of experience.",
-    }
+      img: aws_logo,
+      name: "Luis Tabaranza",
+      title: "Head of Programs",
+      subtitle: "Leads program development and impact.",
+    },
+    {
+      img: person10,
+      name: "Christian Mchail Dela Cruz",
+      title: "Marketing Director",
+      subtitle: "Develops and executes marketing strategies.",
+    },
+    {
+      img: aws_logo,
+      name: "Renzo Emmanuel Ramos",
+      title: "Social Media Manager",
+      subtitle: "Manages online presence and audience engagement.",
+    },
+    {
+      img: aws_logo,
+      name: "Zyrus Alvez",
+      title: "Web Development Specialist",
+      subtitle: "Builds and maintains websites for optimal performance.",
+    },
+    {
+      img: person13,
+      name: "Mickz Jornales",
+      title: "Multimedia Specialist",
+      subtitle: "Crafts engaging multimedia content.",
+    },
+    {
+      img: person14,
+      name: "Jerico Daygon",
+      title: "Research Coordinator",
+      subtitle: "Manages research and ensures data-driven results.",
+    },
+    {
+      img: person15,
+      name: "John Rey Tomas",
+      title: "Training Coordinator",
+      subtitle: "Designs and delivers impactful training programs.",
+    },
+    {
+      img: person16,
+      name: "Francis Concepcion",
+      title: "Training Coordinator (Game Dev)",
+      subtitle: "Designs and delivers game development training programs.",
+    },
+    {
+      img: person16,
+      name: "Francis Concepcion",
+      title: "Training Coordinator (Game Dev)",
+      subtitle: "Designs and delivers game development training programs.",
+    },
+    {
+      img: aws_logo,
+      name: "John Carlo R. Lugatiman",
+      title: "Treasurer",
+      subtitle: "Oversees finances and ensures budget compliance.",
+    },
+    {
+      img: aws_logo,
+      name: "Jumel Quinajon",
+      title: "Technical Project Manager",
+      subtitle: "Oversees project planning and delivery.",
+    },
   ];
   
 
